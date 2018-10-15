@@ -213,7 +213,7 @@ function! deoplete#init#_cached_context() abort
         \ 'dict__dictionary': &l:dictionary,
         \ }
 endfunction
-function! deoplete#init#_context(event, sources) abort
+function! deoplete#init#_context(event) abort
   let input = deoplete#util#get_input(a:event)
 
   let [filetype, filetypes, same_filetypes] =
